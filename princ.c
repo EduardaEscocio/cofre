@@ -2,10 +2,33 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+        int senha[3] ={4,5,2};
+        int tentativa[3] = {0,0,0};
+        int nums[10] = {0,1,2,3,4,5,6,7,8,9};
+        int quantia;
+        int count;
+
+     int verificar(){
+        count = 0;
+         for (int i = 0; i < 3; i++){
+            for (int j = 0; j < 3; j++){
+                scanf("%d", &tentativa[j]);
+                if(tentativa[i] == nums[i]){
+                    count += 1;
+                }
+         
+         }
+    if (count != 0){
+        printf("Você digitou algo que não é um numero, tente novamente\n");
+        return 1;
+        continue;
+    }
+     }
+    
+    return 0;
+}
 int main(){
-    int senha[3] ={4,5,2};
-    int tentativa[3] = {0,0,0};
-    int quantia;
+
     printf("- BEM VINDO AO COFRE MAIS SECRETO DO MUNDO -\n ----------- Irei definir uma senha de 3 dígitos diferentes e você precisa acertá-la -------------\n");
     printf("\033[0;31m");
     printf("  _______________________\n");
@@ -23,12 +46,8 @@ int main(){
     printf("\033[0m");
 
 
-    printf("Digite três números para abrir o cofre: \n");
-    for (int j = 0; j < 3; j++){
-            scanf("%d", &tentativa[j]);
-            if 
 
-        } 
+
     while(tentativa != senha){
         if(quantia == 3){
             printf("\033[0;32m");
@@ -53,9 +72,11 @@ int main(){
             quantia = 0;
         }
         printf("Digite três números para abrir o cofre: \n");
-        for (int j = 0; j < 3; j++){
-            scanf("%d", &tentativa[j]);
-            if 
+            int resultado;
+            resultado = verificar();
+            if (resultado == 1){
+                printf("a\n");
+            }
 
         }  
         for (int i = 0; i < 3; i++){
@@ -84,4 +105,3 @@ int main(){
                     }        
             }
         }
-     }
