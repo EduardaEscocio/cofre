@@ -22,13 +22,7 @@ int main(){
     printf(" \\_______________________/\n");
     printf("\033[0m");
 
-
-    printf("Digite três números para abrir o cofre: \n");
-    for (int j = 0; j < 3; j++){
-            scanf("%d", &tentativa[j]);
-            if 
-
-        } 
+        
     while(tentativa != senha){
         if(quantia == 3){
             printf("\033[0;32m");
@@ -55,7 +49,7 @@ int main(){
         printf("Digite três números para abrir o cofre: \n");
         for (int j = 0; j < 3; j++){
             scanf("%d", &tentativa[j]);
-            if 
+            
 
         }  
         for (int i = 0; i < 3; i++){
@@ -84,4 +78,4 @@ int main(){
                     }        
             }
         }
-     }
+}
